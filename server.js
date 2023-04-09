@@ -19,4 +19,8 @@ app.use(enderecoRoutes);
 app.use(carrinhoRoutes);
 app.use(comboRoutes);
 
- 
+app.listen(8000, () => {
+    console.log('--------------');
+    console.log('--- API ON ---')
+    console.log('--------------');
+});
