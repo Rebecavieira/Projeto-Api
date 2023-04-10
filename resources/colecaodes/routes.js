@@ -5,7 +5,7 @@ const database = require("../../connection/database");
 const TABLE_NAME = 'tb_colecaodes';
 const URL_NAME = '/colecoesemdestaque';
 
-app.get(URL_NAME, async (req, res) => {
+app.get(`${URL_NAME}`, async (req, res) => {
     let dados = await database.execute(`SELECT * FROM ${TABLE_NAME}`);
 
     res.send(dados);
@@ -19,7 +19,7 @@ app.get(`${URL_NAME}/:id,`, async (req, res) => {
     res.send(dados[0]);
 });
 
-app.post(URL_NAME, async (req, res) => {
+app.post(`${URL_NAME}`, async (req, res) => {
     let dados = req.body;
 
     let sql = await database.execute(`
@@ -78,6 +78,4 @@ app.delete(`${URL_NAME}/:id`, async (req, res) => {
     res.sendStatus(204);
 });
 
-module.exports = {
-    app
-};
+module.exports = app;

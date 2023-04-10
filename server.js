@@ -28,9 +28,9 @@ app.use(marcaRoutes);
 app.use(enderecoRoutes);
 app.use(carrinhoRoutes);
 app.use(comboRoutes);
-// app.use(cartaoRoutes);
-// app.use(colecaodesRoutes);
-// app.use(cupomRoutes);
+app.use(cartaoRoutes);
+app.use(colecaodesRoutes);
+app.use(cupomRoutes);
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
