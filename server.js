@@ -16,7 +16,7 @@ const port = 3000;
 
 const app = express();
 
-// criando rota da documentação
+// criando rota para arquivo da documentação
 app.use('/documentacao', swagger.serve, swagger.setup(docs));
 
 app.use(cors());
