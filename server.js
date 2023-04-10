@@ -9,6 +9,8 @@ const comboRoutes = require("./resources/carrinho/carrinho-produto/routes");
 const cartaoRoutes = require("./resources/cartao/routes");
 const colecaodesRoutes = require("./resources/colecaodes/routes");
 const cupomRoutes = require("./resources/cupom/routes");
+const formadepagamentoRoutes = require("./resources/forma_de_pagamento/routes");
+const clientesRoutes = require("./resources/clientes/routes");
 const cors = require('cors');
 const swagger = require("swagger-ui-express");
 const docs = require('./docs.json');
@@ -31,6 +33,8 @@ app.use(comboRoutes);
 app.use(cartaoRoutes);
 app.use(colecaodesRoutes);
 app.use(cupomRoutes);
+app.use(clientesRoutes);
+app.use(formadepagamentoRoutes);
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
