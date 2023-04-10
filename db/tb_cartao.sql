@@ -3,7 +3,8 @@ CREATE TABLE tb_cartao (
     titular VARCHAR (50) NOT NULL,
     numero_do_cartao VARCHAR (19) NOT NULL,
     validade VARCHAR (7) NOT NULL,
-    cvv INT (3) NOT NULL
+    cvv INT (3) NOT NULL,
+    FOREIGN KEY (cliente_id) REFERENCES tb_cliente(id)
 );
 
 INSERT INTO tb_cartao (titular, numero_do_cartao, validade, cvv) 

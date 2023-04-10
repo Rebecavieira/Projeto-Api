@@ -1,7 +1,8 @@
 CREATE TABLE tb_cupom (
     id INT AUTO_INCREMENT PRIMARY KEY,
     codigo VARCHAR (50),
-    desconto VARCHAR (4)
+    desconto VARCHAR (4),
+    FOREIGN KEY (cliente_id) REFERENCES tb_cliente(id)
     );
 
 

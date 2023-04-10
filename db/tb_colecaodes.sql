@@ -2,7 +2,8 @@ CREATE TABLE tb_colecaodes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     img VARCHAR (255),
     titulo VARCHAR (255) NOT NULL,
-    desconto VARCHAR (4) 
+    desconto VARCHAR (4),
+    FOREIGN KEY (categoria_id) REFERENCES tb_category(id) 
     );
 
 INSERT INTO tb_colecaodes (img, titulo, desconto) 
