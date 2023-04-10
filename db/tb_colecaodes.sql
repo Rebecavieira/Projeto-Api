@@ -3,6 +3,7 @@ CREATE TABLE tb_colecaodes (
     img VARCHAR (255),
     titulo VARCHAR (255) NOT NULL,
     desconto VARCHAR (4),
+    categoria_id INT,
     FOREIGN KEY (categoria_id) REFERENCES tb_category(id) 
     );
 

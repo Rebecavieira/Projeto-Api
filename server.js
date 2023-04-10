@@ -10,14 +10,8 @@ const cartaoRoutes = require("./resources/cartao/routes");
 const colecaodesRoutes = require("./resources/colecaodes/routes");
 const cupomRoutes = require("./resources/cupom/routes");
 const cors = require('cors');
-const swagger = require("swagger-ui-express");
-const docs = require('./docs.json');
-const port = 3000;
 
 const app = express();
-
-// criando rota da documentação
-app.use('/documentacao', swagger.serve, swagger.setup(docs));
 
 app.use(cors());
 app.use(express.json());
@@ -32,6 +26,8 @@ app.use(cartaoRoutes);
 app.use(colecaodesRoutes);
 app.use(cupomRoutes);
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
-})
+app.listen(8000, () => {
+    console.log('--------------');
+    console.log('--- PRONTO ---')
+    console.log('--------------');
+});

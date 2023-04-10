@@ -4,6 +4,7 @@ CREATE TABLE tb_cartao (
     numero_do_cartao VARCHAR (19) NOT NULL,
     validade VARCHAR (7) NOT NULL,
     cvv INT (3) NOT NULL,
+    cliente_id INT,
     FOREIGN KEY (cliente_id) REFERENCES tb_cliente(id)
 );
 
@@ -13,4 +14,4 @@ VALUES
 
 INSERT INTO tb_cartao (titular, numero_do_cartao, validade, cvv) 
 VALUES
-("Ana da Silva", "1111-2222-3333-4444", "06/2035", 234)
+("Ana da Silva", "1111-2222-3333-4444", "06/2035", 234);
