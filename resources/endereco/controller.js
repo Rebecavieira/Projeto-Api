@@ -6,8 +6,8 @@ async function listAll(){
         SELECT * FROM ${table};
     `);
     return JSON.stringify(lista);
-}
-
+} 
+ 
 async function listOne(id){
   let lista = await db.execute(`
       SELECT * FROM ${table} WHERE id= ${id};

@@ -4,7 +4,7 @@ const controller = require("./controller");
 const urlCarrinho = "/carrinhos";
 const database = require("../../connection/database");
 
-
+ 
 
 app.get(`${urlCarrinho}`, async (req, res) => {
   res.send(await controller.listAll());
