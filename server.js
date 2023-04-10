@@ -6,6 +6,9 @@ const marcaRoutes = require("./resources/marca/routes");
 const enderecoRoutes = require("./resources/endereco/routes");
 const carrinhoRoutes = require("./resources/carrinho/routes");
 const comboRoutes = require("./resources/carrinho/carrinho-produto/routes");
+const cartaoRoutes = require("./resources/cartao/routes");
+const colecaodesRoutes = require("./resources/colecaodes/routes");
+const cupomRoutes = require("./resources/cupom/routes");
 const cors = require('cors');
 const swagger = require("swagger-ui-express");
 const docs = require('./docs.json');
@@ -25,6 +28,9 @@ app.use(marcaRoutes);
 app.use(enderecoRoutes);
 app.use(carrinhoRoutes);
 app.use(comboRoutes);
+// app.use(cartaoRoutes);
+// app.use(colecaodesRoutes);
+// app.use(cupomRoutes);
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`)
