@@ -715,12 +715,12 @@
         }
       }
     },
-    "/cartoes/{id,}": {
+    "/cartoes/{id}": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "id,",
+            "name": "id",
             "in": "path",
             "required": true,
             "type": "string"
@@ -731,9 +731,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/cartoes/{id}": {
+      },
       "patch": {
         "description": "",
         "parameters": [
@@ -843,12 +841,12 @@
         }
       }
     },
-    "/colecoesemdestaque/{id,}": {
+    "/colecoesemdestaque/{id}": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "id,",
+            "name": "id",
             "in": "path",
             "required": true,
             "type": "string"
@@ -859,9 +857,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/colecoesemdestaque/{id}": {
+      },
       "patch": {
         "description": "",
         "parameters": [
@@ -971,12 +967,12 @@
         }
       }
     },
-    "/cupons/{id,}": {
+    "/cupons/{id}": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "id,",
+            "name": "id",
             "in": "path",
             "required": true,
             "type": "string"
@@ -987,9 +983,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/cupons/{id}": {
+      },
       "patch": {
         "description": "",
         "parameters": [

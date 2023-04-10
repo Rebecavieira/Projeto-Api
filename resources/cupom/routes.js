@@ -11,7 +11,7 @@ app.get(`${URL_NAME}`, async (req, res) => {
     res.send(dados);
 });
 
-app.get(`${URL_NAME}/:id,`, async (req, res) => {
+app.get(`${URL_NAME}/:id`, async (req, res) => {
     let dados = await database.execute(`
         SELECT * FROM ${TABLE_NAME} WHERE id='${req.params.id}'
     `);
