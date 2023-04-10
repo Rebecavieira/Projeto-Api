@@ -6,7 +6,7 @@ async function execute(sql) {
         password: '1234',
         database: 'db_digital_store',
         host: 'localhost',
-        port: 3306
+        port: '8000'
     });
 
     //executa lá no mysql

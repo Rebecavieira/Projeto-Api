@@ -4,7 +4,7 @@ const controller = require("./controller");
 const urlEndereco = "/enderecos";
 const database = require("../../connection/database");
 
-
+ 
 
 app.get(`${urlEndereco}`, async (req, res) => {
   res.send(await controller.listAll());
@@ -21,7 +21,7 @@ app.post(`${urlEndereco}`, async (req, res) => {
 app.delete(`${urlEndereco}/:id`, async (req, res) => {
   res.send(await controller.deletar(req.params.id));
 })
-
+ 
 app.patch(`${urlEndereco}/:id`, async (req, res) => {
   let {cep, logradouro, numero, bairro, cidade, estado} = req.body;
   let id = req.params.id;

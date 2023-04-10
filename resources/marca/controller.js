@@ -14,7 +14,7 @@ async function listOne(id){
   `);
   return JSON.stringify(lista[0]);
 }
-
+ 
 async function create (corpo){
 
   let sql = await db.execute(`
